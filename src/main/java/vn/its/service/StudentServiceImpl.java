@@ -9,8 +9,7 @@ import java.util.List;
 
 @Service("studentService")
 public class StudentServiceImpl implements StudentService {
-    
-    @Autowired
+
     private StudentRepository studentRepository;
 
     public StudentServiceImpl() {
@@ -18,6 +17,7 @@ public class StudentServiceImpl implements StudentService {
         System.out.println("Default Constructor Injection");
     }
 
+    @Autowired
     public StudentServiceImpl(StudentRepository studentRepository) {
         super();
         System.out.println("Constructor Injection");
