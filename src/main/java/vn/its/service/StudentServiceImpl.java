@@ -1,11 +1,13 @@
 package vn.its.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import vn.its.model.Student;
 import vn.its.repository.StudentRepository;
 
 import java.util.List;
 
+@Service("studentService")
 public class StudentServiceImpl implements StudentService {
     private StudentRepository studentRepository;
 

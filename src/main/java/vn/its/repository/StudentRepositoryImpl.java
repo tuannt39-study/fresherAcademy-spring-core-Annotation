@@ -1,10 +1,12 @@
 package vn.its.repository;
 
+import org.springframework.stereotype.Repository;
 import vn.its.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository("studentRepository")
 public class StudentRepositoryImpl implements StudentRepository {
     @Override
     public List<Student> getAllStudent(){

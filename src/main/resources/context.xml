@@ -6,12 +6,14 @@
 
     <!--<context:annotation-config />-->
 
-    <context:component-scan base-package="vn.its" />
+    <!--<context:component-scan base-package="vn.its" />-->
 
-    <bean name="studentRepository" class="vn.its.repository.StudentRepositoryImpl" />
+    <context:component-scan base-package="vn.its.repository, vn.its.service" />
 
-    <bean name="studentService" class="vn.its.service.StudentServiceImpl">
+    <!--<bean name="studentRepository" class="vn.its.repository.StudentRepositoryImpl" />-->
+
+    <!--<bean name="studentService" class="vn.its.service.StudentServiceImpl">-->
         <!--<property name="studentRepository" ref="studentRepository"></property>-->
-    </bean>
+    <!--</bean>-->
 
 </beans>
