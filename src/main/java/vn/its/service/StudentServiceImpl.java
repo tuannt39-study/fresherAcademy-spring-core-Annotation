@@ -9,6 +9,8 @@ import java.util.List;
 
 @Service("studentService")
 public class StudentServiceImpl implements StudentService {
+    
+    @Autowired
     private StudentRepository studentRepository;
 
     public StudentServiceImpl() {
@@ -22,7 +24,6 @@ public class StudentServiceImpl implements StudentService {
         this.studentRepository = studentRepository;
     }
 
-    @Autowired
     public void setStudentRepository(StudentRepository studentRepository) {
         System.out.println("Setter Injection");
         this.studentRepository = studentRepository;
